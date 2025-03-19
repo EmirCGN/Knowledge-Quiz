@@ -298,7 +298,6 @@ Wann begann Konrad Zuse mit dem Bau der Z1?
 1941
 1950
 2
-
 Was ist ein ROM?
 read only memory, also es kann nur gelesen werden.
 ram only mother

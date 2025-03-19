@@ -56,7 +56,22 @@ void speicherePunkte(char *name, int punkte) {
     fclose(file);
 }
 
-// 🔹 Highscore mit QuickSort
+void ladeHighscore() {
+    FILE *file = fopen(SCORE_FILE, "r");
+    if (file == NULL) {
+        printf("Keine gespeicherten Highscores gefunden.\n");
+        return;
+    }
+
+    spielerAnzahl = 0; // Reset für saubere Liste
+
+    while (fscanf(file, "%s - %d Punkte", spielerListe[spielerAnzahl].name, &spielerListe[spielerAnzahl].punkte) == 2) {
+        spielerAnzahl++;
+        if (spielerAnzahl >= MAX_SPIELER) break; // Sicherheitslimit
+    }
+    fclose(file);
+}
+
 void quickSort(Spieler arr[], int low, int high) {
     if (low < high) {
         int pivot = arr[high].punkte;
@@ -77,8 +92,14 @@ void quickSort(Spieler arr[], int low, int high) {
     }
 }
 
-// 🔹 Highscore anzeigen
 void zeigeHighscore() {
+    ladeHighscore();  // Highscore vor dem Anzeigen aus Datei laden
+
+    if (spielerAnzahl == 0) {
+        printf("Keine gespeicherten Highscores gefunden.\n");
+        return;
+    }
+
     quickSort(spielerListe, 0, spielerAnzahl - 1);
     printf("\n--- Highscores ---\n");
     for (int i = 0; i < spielerAnzahl && i < 10; i++) {
@@ -120,11 +141,52 @@ void frageHinzufuegen() {
     printf("Frage erfolgreich hinzugefügt!\n");
 }
 
+int ladeFragen(Frage fragen[], int maxFragen) {
+    FILE *file = fopen(QUESTIONS_FILE, "r");
+    if (file == NULL) {
+        printf("Fehler: Fragen-Datei konnte nicht geladen werden.\n");
+        return 0;
+    }
+
+    int count = 0;
+    char buffer[512];
+
+    while (count < maxFragen && fgets(fragen[count].frage, sizeof(fragen[count].frage), file)) {
+        fragen[count].frage[strcspn(fragen[count].frage, "\n")] = 0;
+
+        for (int i = 0; i < 4; i++) {
+            if (!fgets(fragen[count].antworten[i], sizeof(fragen[count].antworten[i]), file)) {
+                fclose(file);
+                return count;
+            }
+            fragen[count].antworten[i][strcspn(fragen[count].antworten[i], "\n")] = 0;
+        }
+
+        if (fgets(buffer, sizeof(buffer), file)) {
+            sscanf(buffer, "%d", &fragen[count].richtigeAntwort);
+        } else {
+            fclose(file);
+            return count;
+        }
+
+        count++;
+    }
+
+    fclose(file);
+    return count;
+}
+
 // 🔹 Quiz starten
 void quizStarten(char *name) {
     Frage fragen[MAX_FRAGEN];
-    int anzahlFragen = 10;
-    mischeFragen(fragen, anzahlFragen);
+    int anzahlFragen = ladeFragen(fragen, MAX_FRAGEN);  // Fragen aus Datei laden
+
+    if (anzahlFragen == 0) {
+        printf("Keine Fragen geladen. Quiz kann nicht gestartet werden.\n");
+        return;
+    }
+
+    mischeFragen(fragen, anzahlFragen);  // Fragen mischen
     int punkte = 0;
 
     for (int i = 0; i < anzahlFragen; i++) {
@@ -132,6 +194,7 @@ void quizStarten(char *name) {
         for (int j = 0; j < 4; j++) {
             printf("%d) %s\n", j + 1, fragen[i].antworten[j]);
         }
+
         int antwort;
         printf("Deine Auswahl: ");
         while (scanf("%d", &antwort) != 1 || antwort < 1 || antwort > 4) {
@@ -140,18 +203,18 @@ void quizStarten(char *name) {
         }
 
         if (antwort == fragen[i].richtigeAntwort) {
-            printf("✅ Richtig!\n");
+            printf("Richtig!\n");
             punkte += 10;
         } else {
-            printf("❌ Falsch! Die richtige Antwort war: %s\n", fragen[i].antworten[fragen[i].richtigeAntwort - 1]);
+            printf("Falsch! Die richtige Antwort war: %s\n", fragen[i].antworten[fragen[i].richtigeAntwort - 1]);
             punkte -= 5;
         }
     }
+
     printf("\nNeuer Punktestand: %d Punkte\n", punkte);
-    speicherePunkte(name, punkte);
 }
 
-// 🔹 Menü für das Quiz
+//  Menü für das Quiz
 void menue() {
     char name[MAX_NAME];
     printf("Bitte gebe deinen Namen ein: ");
