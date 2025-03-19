@@ -1,0 +1,313 @@
+Wann wurde das hindu-arabische Zahlensystem eingeführt?
+500 v. Chr.
+500 n. Chr.
+1150 n. Chr.
+1642 n. Chr.
+2
+Wer führte das Dualsystem in die Mathematik ein?
+Blaise Pascal
+Konrad Zuse
+George Boole
+Gottfried Wilhelm Leibniz
+4
+Welche Maschine plante Charles Babbage als Vorläufer moderner Computer?
+Analytical Engine
+Enigma
+Difference Engine
+Zuse Z1
+1
+Wann wurde der erste Mikroprozessor entwickelt?
+1965
+1971
+1980
+1995
+2
+Was ist die Hauptaufgabe eines Betriebssystems?
+Verwaltung von Hardware und Software
+Steuerung von Internetverbindungen
+Optimierung von Computerleistung
+Schutz vor Hackern
+1
+Welches dieser Betriebssysteme ist kein UNIX-Derivat?
+Linux
+macOS
+Windows
+Solaris
+3
+Was beschreibt das Neumann-Prinzip?
+Programme und Daten im selben Speicher
+Trennung von Hardware und Software
+Zentrale Steuerung durch das BIOS
+Gleichzeitige Nutzung mehrerer CPUs
+1
+Welche Zahlensysteme sind besonders wichtig in der IT?
+Dezimalsystem
+Binär-, Oktal- und Hexadezimalsysteme
+Römische Zahlen
+Primzahlensystem
+2
+Welche der folgenden Speichertechnologien ist flüchtig?
+ROM
+SSD
+RAM
+Flash-Speicher
+3
+Welche Komponenten gehören zur Rechnerarchitektur?
+Hardware, Konzepte, Spezielles
+Software, Grafik, Netzwerk
+CPU, GPU, SSD
+Tastatur, Maus, Bildschirm
+1
+Was beschreibt Moore’s Law?
+Verdopplung der Transistoranzahl alle zwei Jahre
+Speicherkapazität verdoppelt sich jährlich
+Computer werden doppelt so teuer alle 10 Jahre
+Neue Betriebssysteme kommen alle 5 Jahre
+1
+Was ist ein Beispiel für digitale Daten?
+Elektrische Spannung
+Schall
+Telefonnummern
+Winkelstellung der Zeiger
+3
+Was ist ein Beispiel für analoge Daten?
+Kontostand
+Telefonnummer
+Schallwellen
+Bitfolge
+3
+Welches Konzept beschreibt das Laden von Programmen in den Speicher?
+Pipelining
+Paging
+Bootstrapping
+Caching
+3
+Welches Gerät wird typischerweise für die Ausgabe genutzt?
+Tastatur
+Festplatte
+Monitor
+RAM
+3
+Wer entwickelte die erste programmierbare Rechenmaschine?
+Alan Turing
+Konrad Zuse
+John von Neumann
+Blaise Pascal
+2
+Was ist die Aufgabe eines Dateisystems?
+Verwaltung von Prozessen
+Speicherung und Organisation von Dateien
+Verwaltung von CPU-Zyklen
+Optimierung der Internetverbindung
+2
+Welche der folgenden Schichten gehört zum Schichtenmodell eines Betriebssystems?
+Hardware
+Benutzerschnittstelle
+Compiler
+GPU
+2
+Welche Bauelementtechnologie kam nach der Röhrentechnik?
+Quantenprozessoren
+Mikrochips
+Transistortechnik
+Künstliche Intelligenz
+3
+Was ist eine Hardware?
+Physische Komponenten eines Computers, wie CPU und RAM, also ist greifbar
+Programme und Betriebssysteme, die auf einem Computer laufen
+Eine Art von Computersprache zur Programmierung
+Ein Cloud-Dienst zur Datenspeicherung
+1
+Was ist eine Software?
+Die Gesamtheit der physischen Bauteile eines Computers
+Programme und Betriebssysteme, die auf einem Computer ausgeführt werden, also ist greifbar
+Ein spezieller Kühlmechanismus für Prozessoren
+Eine Art von Mikrochip zur Datenspeicherung
+2
+Wann begannen die Menschen zu rechen bzw zu zählen?
+5000 v.Chr.
+400 v.Chr.
+1833
+300 v.Chr.
+1
+Wann wurde die ersten Aristoteles Automaten erfunden?
+300 v.Chr
+1990
+400 v.Chr
+200 n.Chr
+3
+Wann wurde das Dualsystem erstmals beschrieben?
+1492
+1680-1700
+1941
+1980
+2
+Wann wurde die Zuse Z1 entwickelt?
+1833
+1936
+1945
+1951
+3
+Wer entwickelte den ersten frei programmierbaren Computer?
+Alan Turing
+Konrad Zuse
+John von Neumann
+Steve Jobs
+2
+Welcher Computer gilt als der erste echte Mikroprozessor?
+Intel 4004
+IBM 360
+Apple I
+Zuse Z3
+1
+Welches Unternehmen brachte den ersten PC für den Massenmarkt heraus?
+Apple
+IBM
+Microsoft
+Commodore
+2
+Wann wurde der erste Mikroprozessor (Intel 4004) veröffentlicht?
+1965
+1971
+1980
+1990
+2
+Wann wurde die erste Programmiersprache Plankalkül entwickelt?
+1920
+1950
+1960
+1975
+2
+Wer erfand die erste mechanische Additionsmaschine und wann?
+Blaise Pascal, 1642
+Gottfried Wilhelm Leibniz, 1673
+Charles Babbage, 1837
+Konrad Zuse, 1941
+1
+Wann fingen die Menschen zu rechen bzw. zu zählen?
+8000 v.Chr.
+300 v.Chr.
+5000 v.Chr.
+600 v.Chr.
+3
+Wer entwickelte das Dualsystem und in welchem Jahr?
+George Boole, 1854
+Gottfried Wilhelm Leibniz, 1703
+John von Neumann, 1945
+Alan Turing, 1936
+2
+Wann veröffentlichte Charles Babbage die Analytical Engine?
+1780
+1833
+1890
+1943
+2
+Wann entwickelte George Boole die Boolesche Algebra?
+1703
+1820
+1847
+1900
+3
+Wann begann die Miniaturisierung der Bauteile?
+1958
+1955
+1975
+1985
+2
+Wann wurde der IBM PC erfunden?
+1965
+1975
+1980
+1990
+3
+Wann wurden hochintegrierte Schaltungen (VLSI) erfunden?
+1950
+1960
+1972
+1980
+3
+Wann wurde der erste Heimcomputer erfunden und von wem?
+1965 - IBM
+1977 - APPLE ||
+1981 - IBM PC
+1990 - Apple Macintosh
+2
+Wann wurde die Transistortechnik (Halbleitertransistoren) erfunden?
+1930
+1947
+1955
+1965
+3
+Wann wurde die integrierte Schaltung (LSI) erfunden?
+1958
+1965
+1970
+1980
+2
+Wann wurde die Zuse Z4 in Betrieb genommen?
+1945
+1950
+1965
+1970
+2
+Wo wurde die Zuse Z4 in Betrieb genommen?
+Berlin
+Zürich
+London
+New York
+2
+Wann wurde die Röhrentechnik (Glühkathode) erfunden?
+1873
+1925
+1946
+1940
+3
+Wann knackte Alan Turing die Enigma?
+1936
+1940
+1945
+1950
+2
+Wann wurde die Zuse Z4 weiterentwickelt?
+1942
+1950
+1960
+1970
+1
+Wann wurde die Von-Neumann-Architektur veröffentlicht?
+1920
+1948
+1960
+1975
+2
+Wann veröffentlichte Charles Babbage die Analytical Engine?
+1780
+1890
+1833
+1943
+3
+Wann entwickelte George Boole die Boolesche Algebra?
+1703
+1820
+1854
+1847
+4
+Wann begann Konrad Zuse mit dem Bau der Z1?
+1930
+1936
+1941
+1950
+2
+
+Was ist ein ROM?
+read only memory, also es kann nur gelesen werden.
+ram only mother
+Ein Adressierungsprinzip
+Eine Art Software fuer Programmierer
+1
+Was ist ein RAM?
+RAM ist genau das selbe wie ROM
+Ein RAM steht eigentlich fuer Adrresierungsprinup, es kann Schreiben/Lesen und kann Inhalte fluechtig verlieren
+Es ist ein Pufferspeicher, wo die ganzen wichtigen Informationen gespeichert werden
+Es ist ein Register wo die Bestandteile des Prozessors("Laenge" in BIT) gespeichert werden
+2
